@@ -11,6 +11,7 @@ body {
     justify-content: center; /* Centraliza as imagens horizontalmente */
     gap: 20px; /* Espaço entre as imagens */
     margin-left: 250px; /* Espaço à esquerda para não sobrepor o menu vertical */
+    margin-top: 80px; /* Espaço à esquerda para não sobrepor o menu vertical */
     max-width: 1200px; /* Largura máxima do contêiner */
     padding-top: 20px; /* Espaço superior */
 }
