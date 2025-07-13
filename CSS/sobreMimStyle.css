@@ -48,7 +48,6 @@
     height: auto;
 }
 
-
 .conteudo{
     display: flex;
     flex-wrap: wrap;
@@ -73,12 +72,69 @@
     width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .informacoes {
+        display: flex;
         flex-direction: column; /* empilha os elementos */
     }
+    .sobre-mim{
+        display: flex;
+        float: left;    
+        align-items: center;
+        margin: auto; 
+        width: 100%;
+    }
+    .nome-apelido{
+        padding-left: 5%;
+        width: 34%;
+    }
+    .editar-redes{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 22%;
+        padding: 61px 5px;
+    }
+    .conteudo {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 5px;
+    }
+    .dados{
+        width: 100%;
+    }
+    .editar-perfil{
+        width: 100%;
+    }
+}
 
-    .sobre-mim,
+@media (max-width: 768px) {
+    .informacoes {
+        display: flex;
+        flex-direction: column; /* empilha os elementos */
+    }
+    .sobre-mim{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .nome-apelido{
+        padding-left: 0;
+        width: 100%;
+    }
+    .editar-redes{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 0;
+        padding: 0;
+    }
+    .redes{
+        width: 100%;
+    }
     .conteudo {
         width: 100%;
         margin: 0 0 20px 0;
@@ -91,3 +147,19 @@
     }
 }
 
+@media (max-width: 412px) {
+    .informacoes {
+        flex-direction: column; /* empilha os elementos */
+    }
+    .sobre-mim,
+    .conteudo {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+    .dados{
+        width: 100%;
+    }
+    .editar-perfil{
+        width: 100%;
+    }
+}

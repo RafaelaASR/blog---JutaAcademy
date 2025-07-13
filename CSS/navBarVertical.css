@@ -5,21 +5,15 @@
     top: 80px; /* Começa logo abaixo do menu-horizontal */
     left: 0; /* Alinhado à esquerda */
     height: calc(100% - 80px); /* Ajusta a altura para não sobrepor o menu-horizontal */
-    overflow: auto; /* Permite rolagem se necessário */
-    box-shadow: 10px 0px 10px -5px #00000031; /* Sombra apenas no lado direito */
+    overflow-y: auto;
+    box-shadow: 10px 0px 10px -5px #00000031;
+    z-index: 999;
 }
 
 .menu-vertical ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 17%;
-    background-color: #fff;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-    border-top: none;
-    border-left: none;
 }
 
 .menu-vertical li{
@@ -71,4 +65,3 @@
 .menu-vertical img{
     padding-right: 3px;
 }
-

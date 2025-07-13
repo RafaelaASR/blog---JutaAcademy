@@ -12,7 +12,6 @@ body{
 main{
     margin-top: 80px; /* Espaço para o menu-horizontal */
     padding: 20px;
-    
 }
 
 aside{
@@ -29,4 +28,81 @@ aside{
     z-index: 2;
 }
 
+@media (max-width: 1024px) {
+    .menu-vertical {
+      position: relative;
+      top: -80px;
+      width: 100%;
+      box-shadow: none;
+      margin-top: 161px;
+      order: 3;
+      box-shadow: #00000031 1px 0px 10px;
+    }
+    
+    .menu-vertical ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
 
+    .menu-vertical li{
+        padding: 15px;
+    }
+    
+    main {
+        position: relative;
+        top: -77px;
+        margin-top: 0;
+        margin-left: 0;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-vertical {
+        position: relative;
+        top: -80px;
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+        margin-top: 161px;
+        order: 3;
+    }
+
+    .menu-vertical ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu-vertical li{
+        padding: 10px 26px;
+    }
+
+    main {
+        position: relative;
+        top: -77px;
+        margin-top: 0;
+        margin-left: 0;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 400px){
+     .menu-vertical {
+        position: relative;
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+        margin-top: 161px;
+        order: 3;
+    }
+
+    .menu-vertical li{
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 360px){
+    .menu-vertical li{
+        padding: 10px 15px;
+    }
+}

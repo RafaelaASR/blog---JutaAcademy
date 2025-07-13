@@ -2,22 +2,26 @@
     background-color: #fff;
     height: 80px;
     width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
     box-shadow: #00000031 1px 0px 10px;
+    z-index: 1000; /* Para ficar acima de outros elementos */
 }
 
 .menu-horizontal ul{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    position: relative;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    height: 100%;
+    align-items: center;
 }
 
 .menu-horizontal li{
-    float: left;
+    padding: 0 20px;
 }
 
 .menu-horizontal li a{
@@ -31,27 +35,28 @@
     background-color: #111;
 }
 
-.menu-horizontal .logo{
+.menu-horizontal .logo-canal{
     width: 17%;
     height: 80px;
     display: flex;
     justify-content: center;
     padding-top: 10px;
+    padding-right: 45px;
 }
+
+.logo{
+    width: 70px;
+    height: 70px;
+}
+
 .menu-horizontal .comprimento{
     display: flex;
     align-items: start;
     padding: 30px; 
-    margin-left: -340px;
 }
 
 .search{
     padding: 20px 0;
-    margin-left: -100px;
-}
-
-#search{
-    width: 25pc;
 }
 
 .menu-horizontal .search-bar{
@@ -68,7 +73,6 @@
     border: 1px solid #00000063; 
     border-radius: 5px 0 0 5px;
     border-right: 0; 
-    
 }
 
 .menu-horizontal input{
@@ -89,4 +93,65 @@
     position: relative;
     bottom: 15px;
     width: 100%;
+}
+
+.menu-horizontal .user .menu-perfil{
+    width: 50px;
+    height: 50px;
+}
+
+@media (max-width: 768px) {
+    .menu-horizontal ul{
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        margin: 0;
+        height: 100%;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .menu-horizontal li{
+        display: flex;
+        padding: 0;
+        width: 100%;
+    }
+
+    .menu-horizontal .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 45px;
+    }
+
+    .menu-horizontal input{
+        width: 100%;
+    }
+
+    .menu-horizontal .search{
+        width: 100%;
+    }
+
+    .menu-horizontal .comprimento{
+        display: none;
+    }
+
+    .menu-horizontal .user{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0;
+        width: 100%;
+    }
+
+    .menu-perfil{
+        position: relative;
+        left: 45px;
+        margin: auto;
+        width: 30%;
+    }
+
+    .user p{
+        visibility: hidden;
+    }
 }

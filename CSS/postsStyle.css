@@ -10,7 +10,7 @@ body {
     flex-wrap: wrap;
     justify-content: center; /* Centraliza as imagens horizontalmente */
     gap: 20px; /* Espaço entre as imagens */
-    margin-left: 250px; /* Espaço à esquerda para não sobrepor o menu vertical */
+    margin-left: 18%; /* Espaço à esquerda para não sobrepor o menu vertical */
     margin-top: 80px; /* Espaço à esquerda para não sobrepor o menu vertical */
     max-width: 1200px; /* Largura máxima do contêiner */
     padding-top: 20px; /* Espaço superior */
@@ -32,4 +32,44 @@ body {
     padding: 10px;
     text-align: center;
     min-height: 5px
+}
+
+@media (max-width: 1024px) {
+    .gallery-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-left: 0;
+        margin-top: -20px;
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .gallery {
+        margin: 10px;
+        border: 1px solid #ccc;
+        width: 45%; /* Ajuste o tamanho da imagem para algo mais adequado */
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-left: 0;
+        margin-top: -65px;
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .gallery {
+        margin: 10px;
+        border: 1px solid #ccc;
+        width: 80%; /* Ajuste o tamanho da imagem para algo mais adequado */
+        text-align: center;
+    }
 }
